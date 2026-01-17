@@ -25,6 +25,7 @@ body {
   justify-content: center;
   padding: 40px;
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   border-radius: 20px;
   border: none;
@@ -190,4 +191,61 @@ body {
   background: var(--danger);
   color: white;
   box-shadow: 0 0 10px rgba(218, 54, 51, 0.5);
+}
+
+/* Mobile Adaptation */
+@media (max-width: 600px) {
+  .task-manager-app {
+    padding: 20px 10px;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .task-form {
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .task-input {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .add-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    height: 48px;
+  }
+
+  .tabs {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .tab {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    flex: 1;
+    text-align: center;
+  }
+
+  .task-item {
+    padding: 15px;
+  }
+
+  .delete-btn {
+    opacity: 1;
+  }
+
+  .task-text {
+    font-size: 1rem;
+  }
 }
